@@ -1,0 +1,49 @@
+/* Basic Reset CSS */
+
+/* Default margin and padding are reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* To fill the page width and prevent overflow */
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Default styles for list items are removed */
+  ul,
+  ol {
+    list-style: none;
+  }
+  
+  /* Underline is removed from links */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Makes fonts consistent for form elements */
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+    outline: none;
+    border: none;
+    background: none;
+  }
+  
+  /* Default font weight is removed for heading tags */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: inherit;
+    font-weight: normal;
+  }

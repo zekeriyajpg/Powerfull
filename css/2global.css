@@ -1,0 +1,18 @@
+/* Set default font family for the body */
+body {
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Style for the line element */
+  .line {
+    width: 100px;
+    margin: 0 auto;
+    border: none;
+    border-top: 13px solid #f39c12;
+    border-radius: 10px;
+  }
+  
+  .logo {
+    z-index: 1000;
+  }

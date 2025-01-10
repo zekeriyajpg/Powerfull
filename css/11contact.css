@@ -1,0 +1,55 @@
+.contact-container {
+    margin-top: 50px;
+  }
+  
+  .map-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-item {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .contact-item h4 {
+    margin: 5px;
+  }
+  
+  .contact-item span {
+    color: #333333;
+    font-size: 12px;
+  }
+  
+  .contact-info input,
+  textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(237, 243, 250);
+    border: none;
+  }
+  
+  .map {
+    display: flex;
+    height: 320px;
+  }
+  
+  /* --- RESPONSIVE TASARIM --- */
+  
+  /* Küçük Ekranlar (576px ve altı) */
+  @media (max-width: 576px) {
+    .map-form-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }

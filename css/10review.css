@@ -1,0 +1,107 @@
+#review {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 10px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 10px;
+    margin-left: 20px;
+  }
+  
+  .review-container {
+    background-color: rgb(237, 243, 250);
+    position: relative;
+    padding-bottom: 50px;
+    width: 100%;
+  }
+  
+  .client {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .client-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .client-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .client-info h4,
+  h6 {
+    margin: 0;
+  }
+  
+  .client-info h6 {
+    color: #555353;
+  }
+  
+  .client-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .reviewer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .comment {
+    position: relative;
+    width: 100%;
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #355592;
+  }
+  
+  .border {
+    position: absolute;
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+    top: 100%;
+    left: 0px;
+    width: 50px;
+    height: 30px;
+    z-index: 2;
+    background-color: #7788a8;
+  }
+  
+  .mirror-border {
+    position: absolute;
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+    top: 100%;
+    right: 0px;
+    width: 50px;
+    height: 30px;
+    z-index: 2;
+    background-color: #7788a8;
+  }
+  
+  /* --- RESPONSIVE TASARIM --- */
+  
+  /* Küçük Ekranlar (576px ve altı) */
+  @media (max-width: 576px) {
+    .client-container {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+  }

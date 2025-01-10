@@ -1,0 +1,138 @@
+/* HERO SECTION TEMEL STİL */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 400px; /* Daha makul bir padding */
+    background-image: url("../images/hero-man.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    box-sizing: border-box; /* Taşma sorunlarını önler */
+  }
+  
+  /* Küçük Açıklama */
+  .hero span {
+    display: inline-block;
+    background: #3b5998;
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 7px 20px;
+    border-radius: 6px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    line-height: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+  }
+  
+  /* Ana Başlık */
+  .hero h1 {
+    color: white;
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 1.1;
+    text-align: left;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+  }
+  
+  /* Açıklama Paragrafı */
+  .hero p {
+    line-height: 1.6;
+    max-width: 700px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: left;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  
+  /* Buton Grubu */
+  .hero .hero-buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Kayıt Ol Butonu */
+  .hero .hero-buttons .signup {
+    background: #3b5998;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .hero .hero-buttons .signup:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Detaylar Butonu */
+  .hero .hero-buttons .details {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid white;
+    padding: 10px 25px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease,
+      background-color 0.3s ease;
+  }
+  
+  .hero .hero-buttons .details:hover {
+    background-color: white;
+    color: #3b5998;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* --- RESPONSIVE TASARIM --- */
+  
+  /* Küçük Ekranlar (576px ve altı) */
+  @media (max-width: 576px) {
+    .hero {
+      width: 100%;
+      height: auto;
+      padding: 100px 20px;
+    }
+  
+    .hero span {
+      font-size: 25px;
+    }
+  
+    .hero h1 {
+      font-size: 40px;
+      line-height: 1.2;
+    }
+  
+    .hero p {
+      font-size: 14px;
+      max-width: 90%;
+    }
+  
+    .hero .hero-buttons {
+      flex-direction: row;
+      gap: 10px;
+    }
+  
+    .hero .hero-buttons .signup,
+    .hero .hero-buttons .details {
+      font-size: 14px;
+      padding: 8px 15px;
+      display: inline;
+    }
+  }

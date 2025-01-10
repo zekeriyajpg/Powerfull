@@ -1,0 +1,104 @@
+#bmi-calculator {
+    margin-top: 50px;
+    background-color: white;
+    padding: 50px 0;
+    overflow-x: hidden;
+  }
+  
+  .bmi-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+    gap: 70px;
+  }
+  
+  /* Sol Kısım: Açıklama ve Giriş */
+  .bmi-container .texts {
+    flex: 1;
+    max-width: 600px;
+  }
+  .bmi-container .texts h2 {
+    font-size: 50px;
+    font-weight: 900;
+    color: #355592;
+    margin-bottom: 25px;
+  }
+  
+  .bmi-container .texts p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #4e4e4e;
+    margin-bottom: 30px;
+  }
+  
+  .bmi-container .texts .bmi-inputs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 20px;
+  }
+  
+  .bmi-container .texts label {
+    font-size: 20px;
+    font-weight: 600;
+    color: #4e4e4e;
+    margin-bottom: 10px;
+  }
+  
+  .bmi-container .texts input {
+    padding: 10px;
+    font-size: 16px;
+    border: 3px solid #4e4e4e;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  /* Sağ Kısım: BMI Görsel ve Gösterge */
+  .bmi-chart {
+    flex: 1;
+    text-align: center;
+    position: relative;
+  }
+  
+  .bmi-chart h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  
+  /* BMI İndikatör (Ok İşareti) */
+  #bmi-indicator {
+    position: absolute;
+    bottom: -25px;
+  
+    width: 20px;
+    height: 20px;
+    background: #f39c12;
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    transition: left 0.5s ease-in-out;
+  }
+  
+  .bmi-image {
+    position: relative;
+    width: 600px;
+    height: 315px;
+  }
+  
+  .bmi-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* --- RESPONSIVE TASARIM --- */
+  
+  /* Küçük Ekranlar (576px ve altı) */
+  @media (max-width: 576px) {
+    .bmi-container {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }

@@ -1,0 +1,61 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #355592;
+    border-top: 1px solid #ddd;
+  }
+  
+  .footer-logo .logo {
+    margin-left: 500px;
+  }
+  .footer-logo p {
+    max-width: 800px;
+    margin-left: 500px;
+    line-height: 1.5;
+    font-size: 18px;
+    color: white;
+    font-weight: lighter;
+    padding: 5px;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .link-list {
+    list-style-type: none;
+    padding: 5px;
+  }
+  
+  .link-list li {
+    margin: 5px 0;
+  }
+  
+  .link-list a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+  }
+  
+  .link-list a:hover {
+    text-decoration: underline;
+  }
+  
+  .link-section h2 {
+    color: white;
+    font-size: large;
+    padding-bottom: 2px;
+  }
+  /* --- RESPONSIVE TASARIM --- */
+  
+  /* Küçük Ekranlar (576px ve altı) */
+  @media (max-width: 576px) {
+    .footer-logo .logo {
+      margin-left: 50px;
+    }
+    .footer-logo p {
+      margin-left: 5s0px;
+    }
+  }

@@ -1,0 +1,126 @@
+/* Genel Stil */
+header.sticky-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  header.sticky-navbar nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 80px;
+  }
+  
+  header.sticky-navbar .nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  header.sticky-navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+  }
+  
+  header.sticky-navbar ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 18px;
+    padding: 12px 18px;
+    transition: color 0.3s ease;
+  }
+  
+  header.sticky-navbar ul li a:hover {
+    color: #355592;
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  header.sticky-navbar .btn-join {
+    margin-left: 20px;
+    background: #f39c12;
+    color: white;
+    font-size: 18px;
+    padding: 8px 15px;
+    font-weight: 700;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  header.sticky-navbar .btn-join:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Scroll Durumu */
+  header.sticky-navbar.scrolling {
+    background: #355592;
+    padding: 5px 0;
+  }
+  
+  /* Hamburger Menü (Mobil) */
+  .hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+  
+  /* 📱 576px ve Altı Ekranlar İçin */
+  @media (max-width: 577px) {
+    header.sticky-navbar nav {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 50px;
+    }
+  
+    .hamburger {
+      display: block;
+      z-index: 1100;
+    }
+  
+    header.sticky-navbar .nav {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background: #355592;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 20px 0;
+    }
+  
+    header.sticky-navbar .nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    header.sticky-navbar .nav ul li a {
+      font-size: 18px;
+    }
+  
+    header.sticky-navbar .nav.active {
+      display: flex;
+    }
+  
+    header.sticky-navbar .btn-join {
+      font-size: 18px;
+      width: 80%;
+      text-align: center;
+    }
+  }

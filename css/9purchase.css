@@ -1,0 +1,70 @@
+#purchase {
+    padding-top: 20px;
+  }
+  .card-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 10px;
+  }
+  
+  .purchase-container {
+    border: 1px solid #ddd;
+    width: 200px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .purchase-container:hover {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+  }
+  
+  .purchase-container:hover .cart {
+    background-color: #355592;
+  }
+  
+  .purchase-container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .purchase-container h4 {
+    margin: 1px;
+  }
+  
+  .purchase-container h6 {
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  .purchase-container h6 span {
+    text-decoration: line-through;
+  }
+  
+  .cart {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding: 15px;
+  }
+  
+  .cart i {
+    font-size: smaller;
+    padding-top: 2px;
+  }
+  
+  /* --- RESPONSIVE TASARIM --- */
+  
+  /* Küçük Ekranlar (576px ve altı) */
+  @media (max-width: 576px) {
+    .card-images {
+      flex-direction: column;
+      align-items: center;
+    }
+    #purchase .container {
+      height: 1700px;
+    }
+  }
