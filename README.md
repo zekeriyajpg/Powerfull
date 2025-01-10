@@ -110,7 +110,7 @@ Bu proje, modern bir **Spor Merkezi Web Sitesi** oluşturmak için geliştirilmi
 
 ## 🌍 **Canlı Demo**  
 Projenin canlı haline aşağıdaki bağlantıdan erişebilirsiniz:  
-🔗 **[Netlify Linki]([https://6780ed5a1ad8e36d7c5ef7e5--dancing-profiterole-7346c4.netlify.app/])**  
+🔗 **[Netlify Linki](https://6780ed5a1ad8e36d7c5ef7e5--dancing-profiterole-7346c4.netlify.app/)**
 
 ---
 
