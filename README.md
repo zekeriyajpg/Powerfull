@@ -1,80 +1,132 @@
-# ProjeV2
+# 🏋️‍♀️ **Powerfull - Sport Center Web Page**
 
-## 📌 Proje Açıklaması
-**ProjeV2**, temel web geliştirme unsurlarını barındıran ve kullanıcı dostu bir arayüz sunmayı amaçlayan bir projedir. Proje içerisinde HTML, CSS ve JavaScript dosyaları kullanılmıştır. Kullanıcılar projeyi indirerek inceleyebilir ve geliştirebilir.
-
----
-
-## 🚀 Özellikler
-- Modern ve sade tasarım
-- Responsive (mobil uyumlu) yapı
-- Görsel ve stil dosyalarının optimize edilmesi
-- Temel etkileşimli öğeler (butonlar, menüler vb.)
+## 📚 **Proje Açıklaması**  
+Bu proje, modern bir **Spor Merkezi Web Sitesi** oluşturmak için geliştirilmiştir. Kullanıcılar, farklı sınıflar, eğitmenler ve BMI hesaplayıcı gibi önemli bilgilere kolaylıkla erişebilir. Tamamen **responsive** tasarımı sayesinde masaüstü ve mobil cihazlarda sorunsuz çalışır.
 
 ---
 
-## 🛠️ Kurulum
+## 🚀 **Proje Özellikleri**
 
-### 1️⃣ **Depoyu Klonlayın**
-Aşağıdaki komutla projeyi kendi bilgisayarınıza klonlayın:
+### 📝 **1. Navbar (Gezinme Çubuğu)**  
+- Sayfa bölümlerine doğrudan bağlantılar içerir.  
+- Mobil uyumlu hamburger menü bulunur.  
+- Sayfada gezinirken Navbar sabit kalır ve arka plan rengi `#355592` olarak ayarlanmıştır.  
 
-```bash
-git clone https://github.com/zekeriyajpg/projev2.git
-2️⃣ Proje Dizini'ne Geçin
-Terminalde proje klasörüne geçin:
+### 🧘‍♀️ **2. Our Classes (Sınıflar Bölümü)**  
+- Kullanıcılar **Yoga**, **Group**, **Solo** ve **Stretching** sınıfları arasında geçiş yapabilir.  
+- Her buton aktif durumdayken belirgin hale gelir.  
 
-bash
-Kodu kopyala
-cd projev2
-3️⃣ Proje Dosyalarını Açın
-Visual Studio Code veya tercih ettiğiniz bir kod editörü ile proje dosyalarını açın:
+### 🧑‍🏫 **3. Our Best Trainers (En İyi Eğitmenlerimiz)**  
+- Eğitmenlerin resimlerine **hover efekti** uygulanmıştır.  
+- Her eğitmenin ismi ve uzmanlık alanı net bir şekilde gösterilir.  
 
-bash
-Kodu kopyala
-code .
-📄 Kullanım
-Proje dosyalarını tarayıcınızda açarak görüntüleyebilirsiniz.
-Gerekirse stil ve görsel dosyalarını kendinize göre düzenleyebilirsiniz.
-Projeyi geliştirmek için katkıda bulunabilirsiniz.
-👨‍💻 Katkıda Bulunma
-Projeye katkı sağlamak için aşağıdaki adımları izleyin:
+### 📊 **4. BMI Hesaplayıcı**  
+- Kullanıcılar **boy** ve **kilo** bilgilerini girerek BMI (Vücut Kitle İndeksi) hesaplaması yapabilir.  
+- Gerçek zamanlı olarak sonuç ekranda görüntülenir.  
 
-Fork yapın.
-Kendi dalınızı oluşturun:
-bash
-Kodu kopyala
-git checkout -b ozellik/YeniOzellik
-Değişikliklerinizi commit edin:
-bash
-Kodu kopyala
-git commit -m "Yeni özellik eklendi"
-Dalınıza push edin:
-bash
-Kodu kopyala
-git push origin ozellik/YeniOzellik
-Bir Pull Request oluşturun.
-📜 Lisans
-Bu proje MIT Lisansı ile lisanslanmıştır. Daha fazla bilgi için LICENSE dosyasına bakabilirsiniz.
+### 🗺️ **5. Google Map Entegrasyonu**  
+- İletişim bölümünde **aktif Google Haritası** yer alır.  
+- Harita doğrudan kullanılabilir ve doğru konumu gösterir.  
 
-📧 İletişim
-Zekeriya Palabıyık
-📧 E-posta: z.123.plbyk@gmail.com
-🔗 LinkedIn: linkedin.com/in/zekeriya-palabıyık
 
-📝 Notlar
-Bu proje, temel web geliştirme kavramlarını anlamak ve öğrenmek isteyenler için uygun bir başlangıç projesidir.
-Daha fazla özellik ve geliştirme fikirleriniz varsa katkıda bulunabilirsiniz!
-markdown
-Kodu kopyala
+---
 
-### ✅ **Bu README.md dosyasını şu adımlarla projenin içine ekleyebilirsin:**
+## ⚙️ **Teknolojiler ve Araçlar**  
+- **HTML5**: Sayfa yapısı ve semantik öğeler  
+- **CSS3**: Sayfa tasarımı ve responsive yapı  
+- **JavaScript**: Dinamik etkileşimler ve BMI hesaplayıcı  
+- **FontAwesome**: İkonlar  
+- **Google Fonts (Poppins)**: Yazı tipi  
+- **Netlify**: Projenin canlı dağıtımı  
 
-1. **VS Code**'da proje klasörünü aç.
-2. Proje dizininde **Yeni Dosya** oluştur ve adını `README.md` koy.
-3. Yukarıdaki Markdown içeriğini bu dosyaya yapıştır.
-4. Dosyayı kaydet ve terminalde şu komutları çalıştır:
+---
 
-```bash
-git add README.md
-git commit -m "README dosyası eklendi"
-git push
+## 📂 **Proje Dosya Yapısı**
+```
+
+-- css/
+  |-- reset.css
+  |-- global.css
+  |-- header.css
+  |-- hero.css
+  |-- stats.css
+  |-- classes.css
+  |-- bmi-calculator.css
+  |-- trainers.css
+  |-- purchase.css
+  |-- review.css
+  |-- contact.css
+  |-- footer.css
+  |-- style.css
+
+-- images/
+  |-- logo.png
+  |-- hero-man.jpg
+  |-- yoga.jpg
+  |-- group.webp
+  |-- solo.jpg
+  |-- stret.webp
+  |-- trainer1.jpg
+  |-- trainer2.jpg
+  |-- trainer3.jpg
+  |-- purchase1.jpg
+  |-- purchase2.jpg
+  |-- purchase3.jpg
+  |-- purchase4.jpg
+
+-- js/
+  |-- app.js
+
+|-- index.html
+
+```
+
+---
+
+## 🛠️ **Kurulum Talimatları**
+
+1. **Projeyi klonlayın:**  
+   ```bash
+   git clone https://github.com/kullaniciadi/powerfull.git
+   ```
+2. **Proje klasörüne gidin:**  
+   ```bash
+   cd powerfull
+   ```
+3. **Bağımlılıkları yükleyin:**  
+   ```bash
+   npm install
+   ```
+4. **Projeyi başlatın:**  
+   ```bash
+   npm start
+   ```
+5. **Tarayıcıdan çalıştırın:**  
+   ```
+   http://localhost:3000
+   ```
+
+---
+
+## 🌍 **Canlı Demo**  
+Projenin canlı haline aşağıdaki bağlantıdan erişebilirsiniz:  
+🔗 **[Netlify Linki]([https://6780ed5a1ad8e36d7c5ef7e5--dancing-profiterole-7346c4.netlify.app/])**  
+
+---
+
+## ✅ **Değerlendirme Kriterleri Kontrol Listesi**  
+- [x] Navbar bağlantıları doğru çalışıyor.  
+- [x] Sınıf butonları aktif çalışıyor.  
+- [x] Eğitmen görselleri "hover" efektine sahip.  
+- [x] BMI hesaplayıcı doğru çalışıyor.  
+- [x] Google Map aktif ve doğru konum gösteriyor.  
+- [x] Sayfa mobil cihazlarda uyumlu görünüyor.  
+
+---
+
+## 🤝 **Katkıda Bulunma**  
+Katkıda bulunmak isterseniz lütfen bir **pull request** gönderin.  
+
+---
+
+🎯 **Bu proje, Patika+ Bitirme Projesi kriterlerine uygun olarak hazırlanmıştır.**
